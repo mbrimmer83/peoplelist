@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>People Sort</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+        <table>
+          <th class="header">List of People</th>
+          <tbody id="people">
+            
+          </tbody>
+        </table>
+        </div>
+        <div class="container rightBox">
+          <div class="rightBoxContainer">
+          <form id="order" class="inputForm">
+            <label>Sort direction: </label>
+            <input type="radio" name="order" value="asc" checked>
+            <label>ASC</label>
+            <input type="radio" name="order" value="dsc">
+            <label>DSC</label><br>
+          </form>
+          <label>Sort by: </label>
+          <select id="sortBy">
+            <option value="age">Age</option>
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+          </select><br>
+          <button id="sort" class="button">Sort List</button>
+          </div>
+        </div>
+
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
